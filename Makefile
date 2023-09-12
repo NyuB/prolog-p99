@@ -15,4 +15,7 @@ else
 	echo ":- initialization(tests, main)." >> $*-tests.pl
 	echo "tests :- true." >> $*-tests.pl
 endif
-	
+
+commit-solved-p%: test-p% p%.pl p%-tests.pl
+	git add p$*.pl p$*-tests.pl
+	git commit -m "Problem $* OK"
