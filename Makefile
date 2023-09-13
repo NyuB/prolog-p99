@@ -1,4 +1,4 @@
-tests: test-p001 test-p002 test-p003 test-p004 test-p005 test-p006 test-p007 test-p008 test-p009 test-p010
+tests: test-p001 test-p002 test-p003 test-p004 test-p005 test-p006 test-p007 test-p008 test-p009 test-p010 test-p011
 
 test-%: %.pl %-tests.pl
 	swipl $*-tests.pl
@@ -18,4 +18,6 @@ endif
 
 commit-solved-p%: test-p% p%.pl p%-tests.pl
 	git add p$*.pl p$*-tests.pl
+# Add Makefile for the 'tests' (all tests) rule update
+	git add Makefile
 	git commit -m "Problem $* OK"

@@ -2,16 +2,9 @@
 :- ensure_loaded(p005).
 :- ensure_loaded(p009).
 
-rle_item([N, E], [E|T]) :-
-    len(N, [E|T]).
-
-rle_acc(Acc, RLE, []) :-
-    rev(Acc, RLE).
-
-rle_acc(Acc, RLE, [H|T]) :-
-    rle_item(RH, H),
-    rle_acc([RH|Acc], RLE, T).
+rle_map([], []).
+rle_map([[N, E] | Ns], [[E|TE]|T]):- len(N, [E|TE]), rle_map(Ns, T).
 
 rle(RLE, L):-
     pack(Packed, L),
-    rle_acc([], RLE, Packed).
+    rle_map(RLE, Packed).
