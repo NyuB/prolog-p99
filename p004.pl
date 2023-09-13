@@ -1,5 +1,5 @@
-len(0, []).
-len(N, [_|T]) :-
-    N1 is N - 1,
-    N1 >= 0,
-    len(N1, T).
+len(N, N, []).
+len(Acc, N, [_|T]) :-
+    N1 is Acc + 1,
+    len(N1, N, T).
+len(N, L) :- len(0, N, L).

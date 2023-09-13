@@ -1,4 +1,4 @@
-tests: test-p001 test-p002 test-p003 test-p004 test-p005
+tests: test-p001 test-p002 test-p003 test-p004 test-p005 test-p006 test-p007 test-p008 test-p009 test-p010
 
 test-%: %.pl %-tests.pl
 	swipl $*-tests.pl
