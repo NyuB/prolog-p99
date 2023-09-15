@@ -43,3 +43,5 @@ sorted_acc_insert(Skipped, [A|Ta], H, Sorted, T, Cmp):-
 
 int_cmp(lt, A, B):- A < B.
 int_cmp(ge, A, B):- A >= B.
+
+len(N, L):- length(L, N).
