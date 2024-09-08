@@ -2,6 +2,11 @@
 
 Prolog learning using https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/
 
+## Extra problems
+
+[Exercism](https://exercism.org/tracks/prolog) exercices
++ [zebra puzzle](zebra.pl)
+
 ## Platform
 
 All tests and implementations done with **swipl** on **Windows**. Should work with **swipl** on **Linux** too, no guarantee for other Prolog implementations.
