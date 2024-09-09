@@ -2,6 +2,8 @@
 
 Prolog learning using https://www.ic.unicamp.br/~meidanis/courses/mc336/2009s2/prolog/problemas/
 
+A copy of the page is placed in [problems](problems/99.html).
+
 ## Extra problems
 
 [Exercism](https://exercism.org/tracks/prolog) exercices
