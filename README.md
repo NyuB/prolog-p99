@@ -8,6 +8,7 @@ A copy of the page is placed in [problems](problems/99.html).
 
 [Exercism](https://exercism.org/tracks/prolog) exercices
 + [zebra puzzle](zebra.pl)
++ [knapsack problem](knapsack.pl)
 
 ## Platform
 
